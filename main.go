@@ -6,7 +6,7 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 
 	"github.com/leekchan/accounting"
 )
@@ -18,7 +18,7 @@ func main() {
 	var height float64
 
 	// input
-  accountingFormater := accounting.Accounting{Precision: 2}
+	accountingFormater := accounting.Accounting{Precision: 2}
 
 	fmt.Println("This program calculates the volume of a pyramid.")
 	fmt.Println()
@@ -29,10 +29,10 @@ func main() {
 	fmt.Print("Enter the height: ")
 	fmt.Scanln(&height)
 
-  //process
-  var volume = (length * width * height) / 3
+	//process
+	var volume = (length * width * height) / 3
 
 	// output
-	fmt.Println("The volume is: ", accountingFormater.FormatMoney(volume) , "cm³")
+	fmt.Println("The volume is: ", accountingFormater.FormatMoney(volume), "cm³")
 	fmt.Println("\nDone.")
 }
