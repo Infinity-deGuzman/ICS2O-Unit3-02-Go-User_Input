@@ -29,7 +29,7 @@ func main() {
 	fmt.Print("Enter the height: ")
 	fmt.Scanln(&height)
 
-	//process
+	// process
 	var volume = (length * width * height) / 3
 
 	// output
